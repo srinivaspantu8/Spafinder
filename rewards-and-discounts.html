@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>REWARDS & DISCOUNTS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Align the elements side by side */
+            background: url(https://www.atulhost.com/wp-content/uploads/2019/08/reward-2048x1024.jpg) no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            color: #fff;
+        }
+
+        .big-container {
+            display: flex; /* Make the containers flex containers */
+            align-items: flex-start; /* Align containers at the top */
+            justify-content: space between; /* Align the containers side by side */
+            margin: 30px;
+        }
+
+        .container {
+            width: 5%;
+            flex: 1; /* Adjusted width using flex */
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            
+            z-index: 1;
+        }
+
+        .image-container {
+            flex: 1; /* Adjusted width using flex */
+        }
+
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 34px;
+            color: #333;
+        }
+
+        .subscribe-form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .email-input {
+            flex: 2;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .subscribe {
+            flex: 1;
+            background-color: #00838f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .subscribe-heading {
+            display: flex; /* Use flex to arrange the heading and icons horizontally */
+            align-items: center; /* Vertically center align the heading and icons */
+        }
+
+        .subscribe-heading h3 {
+            margin-top: 40px;
+            margin-right: 10px; /* Add some spacing between the heading and icons */
+            font-size: 18px; /* Increase the font size for better visibility */
+        }
+
+        .social-icons a {
+            text-decoration: none;
+        }
+
+        .social-icons img {
+            margin-top: 20px;
+            height: 40px;
+            width: 70px;
+            margin-right: 10px;
+        }
+
+        .subscribe:hover {
+            background-color: #00838f;
+        }
+
+        /* Add styles for the success popup */
+        .popup {
+        
+            background-color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-content {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .popup-button {
+            background-color: #00838f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+       
+        .camera{
+            background-color: #00838f;
+            height: 30px;
+            color:white;
+            cursor: pointer;
+        }
+        .center-content {
+            display: flex;
+            align-items: center;
+        }
+        img {
+            height: 190px;
+            width: 300px;
+        }
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10vh;
+        }
+        h3 {
+            margin-right: 30px;
+            color: #ad1010; /* Set the text color to red */
+        }
+
+        .crypto-payment {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+            justify-content: center; /* Center content vertically */
+            text-align: center;
+            margin-top: 25px;
+        }
+        .crypto-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+            justify-content: center; /* Center content vertically */
+            text-align: center;
+            margin-top: 20px;
+        }
+        .crypto-form .form-group {
+            margin-bottom: 20px;
+            text-align: center;
+            max-width: 500px;
+        }
+    .crypto-pay-button {
+            background-color: #00838f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <h1>SUBSCRIBE FOR SPECIAL OFFERS</h1>
+    <div class="big-container">
+        <div class="container">
+            <p>Sign Up For Your Spa Insider Today!</p>
+            <form class="subscribe-form" id="subscribe-form">
+                <input type="email" class="email-input" placeholder="Enter your email">
+                <button type="button" class="subscribe" id="subscribe-button">Subscribe</button>
+            </form>
+            <div class="popup" id="success-popup">
+                <div class="popup-content">
+                    <h2>You have successfully subscribed to SpaFinder</h2>
+                    <button class="popup-button" id="close-popup">Close</button>
+                </div>
+            </div>           
+            <div class="subscribe-heading">
+                <h3>Subscribe with :</h3>
+                <div class="social-icons">
+                    <a href="C:\Users\anjal\projects\spafinder\signup.html">
+                        <img src="http://1000logos.net/wp-content/uploads/2016/11/fb-logo.jpg">
+                    </a>
+                    <a href="C:\Users\anjal\projects\spafinder\signup.html">
+                        <img src="https://th.bing.com/th?id=OIP.N3cFVgAShuhUnvU-yBB12AHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2">
+                    </a>
+                </div>
+            </div>
+         </div>
+         </div>
+    
+ 
+    <div class="center-container">
+        <div class="center-content">
+            <h3>Do you have a gift card?</h3>
+            <img src="images/Giftcard.png" alt="Gift Card Image">
+        </div>
+    </div>  
+    <div>
+        <h3>Click the button below to scan it:</h3>
+        <button id="startCamera" class="camera">Scan Gift Card</button>
+        <video id="cameraView" style="display: none;"></video>
+        <canvas id="canvas" style="display: none;"></canvas>  
+        <img id="scannedImage" style="display: none; max-width: 100%;" alt="Scanned Gift Card">
+    </div>
+<div class="crypto-payment">
+        <h2> Crypto only Spa Events and Merchandise</h2></div>
+        <div class="privacy">
+        <p>Pay with crypto to enjoy exclusive access to special spa events and purchasing merchandise.</p>
+        </div>
+        <div class="crypto-form">
+            <form id="crypto-payment-form">
+                <div class="form-group">
+                    <label for="crypto-type">Select Cryptocurrency:</label>
+                    <select id="crypto-type" name="crypto-type">
+                        <option value="bitcoin">Bitcoin</option>
+                        <option value="ethereum">Ethereum</option>  
+                        <option value="cardano">Cardano</option>
+                        <option value="ripple">Ripple</option>
+                        <option value="stellar">Stellar</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="wallet-address">Your Wallet Address:</label>
+                    <input type="text" id="wallet-address" name="wallet-address" placeholder="Enter your wallet address" required>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Amount to Pay (in cryptocurrency):</label>
+                    <input type="text" id="amount" name="amount" placeholder="Enter the amount" required>
+                </div>
+                <button onclick type="submit" class="crypto-pay-button">Pay with Crypto</button>
+            </form>
+        </div>        
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const startCameraButton = document.getElementById('startCamera');
+            const cameraView = document.getElementById('cameraView');
+            const canvas = document.getElementById('canvas');
+            const context = canvas.getContext('2d');
+    
+            // Function to start the camera and handle the captured image
+            async function startCamera() {
+                try {
+                    const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                    cameraView.srcObject = stream;
+                } catch (error) {
+                    console.error('Error accessing camera: ', error);
+                }
+            }
+    
+            // Function to capture an image from the camera
+            async function captureImage() {
+                context.drawImage(cameraView, 0, 0, canvas.width, canvas.height);
+                // You can send the captured image for further processing, e.g., QR code scanning
+            }
+    
+            startCameraButton.addEventListener('click', startCamera);
+            startCameraButton.addEventListener('click', captureImage);
+    
+        const subscribeButton = document.getElementById("subscribe-button");
+        const successPopup = document.getElementById("success-popup");
+        const closeButton = document.getElementById("close-popup");
+        const emailInput = document.querySelector(".email-input");
+
+        subscribeButton.addEventListener("click", function () {
+            const email = emailInput.value.trim();
+
+            // Show the success popup only if email is entered
+            if (email !== "") {
+                console.log("Button clicked - Showing success popup");
+                successPopup.style.display = "flex";
+            } else {
+                alert("Please enter your email before subscribing.");
+            }
+        });
+
+        closeButton.addEventListener("click", function () {
+            console.log("Close button clicked - Hiding success popup");
+            successPopup.style.display = "none";
+        });
+    });
+    </script>    
+</body>
+</html>

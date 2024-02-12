@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SPA FINDER</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+</head>
+
+<body class="main-body">
+ <!-- class="sign-buttons"-->
+ <section class="top">
+ <div class="sign-buttons-div">
+  <button type="button" class="btn btn-secondary" onclick="window.location.href='signup.html'" style="float: right;margin-right:0.2% ; ">Sign Up</button>
+  <button type="button" class="btn btn-secondary" onclick="window.location.href='signin.html'" style=" float: right;margin-right:0.2% ; ">Sign In</button>
+ <!-- <button class="sign-buttons"onclick="window.location.href='signup.html'">Sign Up</button>
+  <button class="sign-buttons"onclick="window.location.href='signin.html'">Sign In</button>-->
+</div>
+   <!-- <a class="sign-buttons" href="signup.html" style="text-decoration: none;"> <button >Sign Up</button> </a>
+    <a class="sign-buttons" href="signin.html" style="text-decoration: none;"> <button >Sign In</button> </a>-->
+  
+    <div class="title">FinderSpa</div>
+    <!--<nav class="navbar navbar-dark bg-primary">
+      <div class="topnav">
+        <div class="content">
+        <a class="active" href="#home">Home</a>
+        
+        
+        <div class="dropdown">
+          <button class="dropbtn" href="update_personal_info.html">Profile</button>
+          <div class="dropdown-content">
+            <a href="profile.html">My Account</a>
+            
+          </div>
+        </div>
+        <a href="update_personal_info.html">Personal Information</a>
+        <a class="about" href="About_Us.html">About Us</a>
+        <a  href="Contact.html">Contact</a>
+        <div class="dropdown">
+          <button class="dropbtn">Services 
+            <i class="fa fa-caret-down"></i> 
+          </button>
+          All the available services in the homepage with hyperlinks
+          <div class="dropdown-content"> 
+            <a href="Facial.html">Facial</a>
+            <a href="PedicureandManicure.html">Manicure & Pedicure</a>
+            <a href="Massage.html">Massage</a>
+            
+
+            <a href="Waxing.html">Waxing</a> 
+          </div>  
+        </div> 
+
+        <div class="dropdown"> 
+          <button class="dropbtn">Translate  Translate button with different languages 
+          </button>
+          <All the available languages we can translate, eventually with hyperlinks
+          <div class="dropdown-content"> 
+            <a>English</a>
+            <a>Spanish</a>
+            <a>Hindi</a>
+            <a>French</a> 
+          </div>  
+        </div> 
+          </div>
+          
+        </div> -->
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navb">
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="About_Us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="update_personal_info.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="Facial.html">Facial</a>
+                  <a class="dropdown-item" href="PedicureandManicure.html">Manicure and Pedicure</a>
+                  <a class="dropdown-item" href="Massage.html">Massage</a>
+                  <a class="dropdown-item" href="Waxing.html">Waxing</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Translate
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">English</a>
+          <a class="dropdown-item" href="#">Spanish</a>
+          <a class="dropdown-item" href="#">Hindi</a>
+          <a class="dropdown-item" href="#">French</a>
+        </div>
+      </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search for spa services" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" onclick="highlightSearch()"type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+        
+
+     
+      </div>
+      <!--search section in the homepage-->
+     <!-- <div class="search-container">
+        <div class="search-box">
+          <input type="text" id="searchInput" class="search-input" placeholder="Search for spa services">
+          <button class="search-button"onclick="highlightSearch()">Search</button>
+        </div>
+        </div>-->
+     
+    
+    
+  </section>
+
+  
+  </div>
+  <main>
+    
+  <!--<div class="container">
+    <div class="green-background">
+      <div style="display: flex">
+        <h2 style="margin-left: 5px;">Home</h2>
+        <h2 style="margin-left: 10px;">About Us</h2>
+        <h2 style="margin-left: 10px;">Careers</h2>
+      </div>
+    </div>
+    <div class="account-creation">
+      <div style="display: flex; justify-content: flex-end;">
+        <h2 style="margin-right: 10px;">Sign in</h2>
+        <h2 style="margin-right: 5px;">Sign up</h2>
+      </div>
+    </div>
+  </div>-->
+  
+    
+  
+  </main>
+<div class="blue-background" id="content">
+    <div style="display:flex; justify-content: space-between;">
+      <div class="Facial">
+        <h2 style="color: #111111e0; font-size: 30px; font-weight: bold; text-align: center;">PHOTO GALLERY</h2>
+        <marquee loop="infinite" style =  animation:60s>
+        <img src ="images/facial.WEBP" height="300px" width="500px"/>&nbsp;&nbsp;<img src="images/massage.JPG" height="300px" width="500px"/>&nbsp;&nbsp;
+        <img src="images/waxing.jpeg"height="300px" width="500px"/>&nbsp;&nbsp;
+        <img src="images/mani.jpg"height="300px" width="500px"/>&nbsp;&nbsp;<img src="images/spa.jpg"height="300px" width="500px"/>&nbsp;&nbsp;
+        <img src="images/pedi.png"height="300px" width="500px"/>
+      </marquee>
+        </div>   
+    </div>
+  </div>
+
+  <div class="Rewards" style="display: flex; align-items: center; text-align: center;">
+    <h2 style="margin-left: 40%; color: #1b1b1c; font-size: 24px; font-weight: bold;">
+        <a href="rewards-and-discounts.html" style="text-decoration: none; color: #1b1b1c;">
+            Explore our Rewards & Discounts
+        </a>
+    </h2>
+</div>
+
+  <div class="About" style="display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <!--<button onclick="window.open('priv.html', '_blank');">Privacy Policy</button>-->
+      <button type="button" class="btn btn-success"onclick="window.open('priv.html', '_blank');" style="margin-left: 5px;margin-bottom: 0px;">Privacy Policy</button>
+      
+    </div>
+</div>
+<!-- Chatbot Structure -->
+<div id="chatbot">
+  <div id="chatbot-header">
+      SpaFi 
+      <button onclick="toggleChatbot(false)"style="margin-left:200px"><i class="fa fa-window-minimize"></i></button>
+  </div>
+  <div id="chatbot-body">
+      <div id="chatbot-messages">
+          <div class="chatbot-message">Hello, I'm SpaFi, how can I assist you today?</div>
+          <div class="chatbot-message">Frequently Asked Questions:</div>
+          <ul>
+              <li>How do I book an appointment?</li>
+              <li>What services do you offer?</li>
+              <li>Do you have any ongoing promotions?</li>
+              <!-- Add more FAQs as needed -->
+          </ul>
+      </div>
+  </div>
+  <div id="chatbot-footer">
+      <input type="text" id="chatbot-input" placeholder="Type a message...">
+      <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<!-- Minimized Chatbot Bar -->
+<div id="chatbot-minimized" onclick="toggleChatbot(true)" style="display:none;">
+  <span>Chat with SpaFi</span>
+</div>
+
+
+
+      <script>
+  function toggleChatbot(show) {
+    var chatbot = document.getElementById("chatbot");
+    var chatbotMinimized = document.getElementById("chatbot-minimized");
+
+    if (show) {
+        chatbot.style.display = "block";
+        chatbotMinimized.style.display = "none";
+    } else {
+        chatbot.style.display = "none";
+        chatbotMinimized.style.display = "flex";
+    }
+}
+
+function sendMessage() {
+    var input = document.getElementById("chatbot-input");
+    var message = input.value.trim();
+    if (message) {
+        var messagesContainer = document.getElementById("chatbot-messages");
+        var newMessageDiv = document.createElement("div");
+        newMessageDiv.classList.add("chatbot-message");
+        newMessageDiv.textContent = message;
+        messagesContainer.appendChild(newMessageDiv);
+        input.value = "";
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+}
+
+// Automatically display the chatbot after a set time
+setTimeout(function() {
+    toggleChatbot(true);
+}, 2000);
+
+        function highlightSearch() {
+          const searchText = document.getElementById('searchInput').value;
+          const content = document.getElementById('content');
+          // Check if searchText is not empty
+          if (searchText.trim() === "") {
+            return; // Don't highlight if there's no input
+          }
+          // Remove any previous highlights
+          const elements = content.getElementsByClassName('highlight');
+          for (let i = 0; i < elements.length; i++) {
+            elements[i].classList.remove('highlight');
+          }
+          const textToHighlight = content.innerHTML;
+          console.log(textToHighlight);
+          const Element = content.getElementsByClassName(searchText);
+           Element[0].classList.add('highlight');
+        }
+      </script>
+    </div>
+  </div>
+  <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<!-- Popper.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,403 @@
+
+    body {
+      font-family: Arial, sans-serif;
+     /* background-color: #FF6666;*/
+      margin: 0;
+      padding: 0;
+      align-items: center;
+      overflow-x: hidden;
+      
+    }
+    
+    main{
+      padding: 300px;
+      background: url("spa-packages.jpg");
+      background-size: cover;
+      max-width : 100%;
+    }
+    .dropdown-toggle::after {
+      display: none;
+  }
+  
+  .dropdown:hover > .dropdown-menu {
+      display: block;
+  }
+  
+  .dropdown > .dropdown-toggle:active {
+      pointer-events: none;
+  }
+
+    .title {
+      color: #ad1010;
+      font-size: 50px;
+      margin-left: 40%;
+      margin-right: 50%;
+      /*text-align: center;*/
+      margin-top: 5vh;
+      /* Adjusted to a percentage of viewport height */
+      font-weight: bold;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .blue-background {
+      background-color:ghostwhite;
+      margin-top: 1vh;
+      width: 100%;
+      /* Adjusted to a percentage of the container width */
+    
+      /* Added minimum height for visibility */
+    }
+
+    .search-container {
+      padding: 4vh;
+      /* Adjusted to a percentage of viewport height */
+      position: absolute;
+      top: 0;
+      right: 0;
+      /* Keep search box on the right side */
+      width: 25%;
+      /* Adjusted to a percentage of the container width */
+      border-radius: 30px;
+      margin-bottom: 2%;
+      margin-top: -1%;
+      margin-right:-4%
+    }
+
+    .search-box {
+      display: flex;
+      
+      width: 90%;
+      border-radius: 30px;
+      margin-bottom: 25px;
+      margin-top: 40px;
+    }
+
+
+    .search-input {
+      width: 80%;
+      padding: 2vh;
+      padding-right: 2px;
+      display: inline-block;
+      /* viewport height */
+      border-radius: 30px;
+      margin-bottom: 5px;
+      margin-top: 40px;
+    }
+
+    .search-icon {
+      padding: 2vh;
+      /* viewport height */
+      cursor: pointer;
+      display: inline-block;
+      border-radius: 30px;
+      margin-bottom: 0;
+      height: 1px;
+      margin-top: 40px;
+      margin-bottom: 5px;
+    }
+
+    .highlight {
+      background-color: yellow;
+    }
+
+    .container {
+      display: flex;
+      /* Added a container to hold both elements in a single line */
+    }
+
+    .green-background {
+      background-color: #009999;
+      margin-top: 2vh;
+      width: 50%;
+      /* Adjusted to a percentage of the container width */
+      min-height: 30px;
+      /* Added minimum height for visibility */
+    }
+
+    .account-creation {
+      background-color: #002999;
+      margin-top: 2vh;
+      width: 50%;
+      /* Adjusted to a percentage of the container width */
+      min-height: 30px;
+      /* Added minimum height for visibility */
+    }
+
+    .Rewards {
+      background-color: #ad1010;
+      width: 100%;
+      /* Adjusted to a percentage of the container width */
+      min-height: 150px;
+      /* Added minimum height for visibility */
+    }
+
+    .About {
+     /* background-color: #008599;*/
+      margin-top: 1vh;
+      width: 100%;
+      /* Adjusted to a percentage of the container width */
+      min-height: 100px;
+      /* Added minimum height for visibility */
+    }
+    /*.topnav {
+  overflow: hidden;
+  margin-right: 1150px;
+  margin-left: 0px;
+  background-color:rgb(234, 229, 229);
+  margin-top: 20px;
+  margin-bottom: 0px;
+  opacity: 0.8;
+  width: 51%;
+  
+}*/
+/*Styling for navigation menu in homepage*/
+
+/*.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ddd;
+  color: black;
+  opacity: 1;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px; 
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropbtn:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown-content {
+	display:none;
+  position: absolute;
+  background-color:rgb(234, 229, 229);
+  min-width: 160px;
+  z-index: 1;
+}
+*/
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: rgb(179, 172, 172);
+}
+.content{
+  color: #0f0f0f;
+}
+.facial{
+  display: block;
+  margin-right: 750px;
+  box-shadow: 0 0 30px 25px rgba(0,0,0,0.06);
+}
+.top{
+  margin-top: 0%;
+  margin-bottom: 20px;
+  padding:5px
+}
+.search-button{
+  border-radius: 30px;
+  padding: 15px;
+  margin-left: 0;
+  margin-top: 40px;
+  cursor: pointer;
+  margin-bottom: 5px;
+ 
+}
+.search-button:hover{
+  transform: scale(1.1);
+  transition: transform ease-in-out;
+}
+
+.sign-buttons{
+    position: relative;
+    text-decoration: none;
+    border:1px rgb(184, 105, 105) ;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: white;
+    
+    /* background-color:cornflowerblue;*/
+    /*background: rgb(5, 5, 165);*/
+    color:black;
+    font-weight:bolder;
+    margin: 0.25%;
+    margin-right:0.2% ;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    /*margin-left: 5px;*/
+     text-decoration: none;
+     float: right;
+     position: relative;
+     z-index: 99;
+    
+    
+}
+
+
+.sign-buttons:hover{
+    transform: scale(1.2);
+    transition:transform 330ms ease-out;
+}
+.buttonss{
+    /*linear-gradient(#e66465, #9198e5)*/
+    background: rgb(5, 5, 165);
+    margin-top: 0.5em;
+    border-radius: 40px;
+    padding: 0.5em;
+    padding-right: 2em;
+    padding-left: 2em;
+    color: #ebf8e1;
+
+}
+.buttonss:hover{
+    transform: scale(1.2);
+    transition:transform 330ms ease-out;
+        
+}
+.main{
+    /*linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c)*/
+    background:#f7f8f6;
+    width: 100%;
+    text-align:center;
+    margin-top: 10em;
+}
+.main h1{
+    color:#131212 ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.main label{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.main input{
+    padding: 0.5em;
+    margin: 0.25em;
+    border: 0;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+}
+.main input:hover{
+    transform: scale(1.1); 
+    transition:transform 330ms ease-out;
+}
+.main a{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+a{
+  text-decoration: none; 
+}
+.main a:hover{
+    color: rgb(160, 160, 170);
+    font-weight:500;
+}
+.sign{
+    margin-left:30% ;
+    margin-right: 30%;
+    background-color: #f4f7f2;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.06);
+    border:#131212;
+}
+.main-body{
+  overflow-x: hidden;
+  width: 100%;
+}
+.contact-us-button {
+  position:absolute;
+ 
+  right: 20px;
+  z-index: 10;
+}
+#chatbot {
+  width: 300px;
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: none;
+}
+
+#chatbot-header {
+  background-color: #4CAF50;
+  color: white;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 17px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#chatbot-body {
+  height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+#chatbot-footer {
+  padding: 10px;
+  background-color: #ddd;
+  display: flex;
+}
+
+#chatbot-input {
+  border: none;
+  padding: 10px;
+  width: 80%;
+  margin-right: 10px;
+}
+
+#chatbot input:focus, #chatbot button {
+  outline: none;
+  
+}
+
+.chatbot-message {
+  background-color: #eee;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+#chatbot-minimized {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  font-size: 14px;
+}
